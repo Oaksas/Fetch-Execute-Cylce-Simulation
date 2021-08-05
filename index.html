@@ -2,6 +2,7 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <title>FES</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="script" href="index.js">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -25,17 +27,18 @@
     
     </div>
     <div class="col-sm-5 col-lg-5 col-md-5">
-        
+
       <h2>Program Counter(PC)</h2>
-      <input type="number" class="form-control" id="pc" aria-describedby="emailHelp" >
+      <input type="number" class="form-control" id="pc"  >  <!-- Program Counter is a register which holds the address of the next operation -->
 
       <h2>Instruction Register(IR)</h2>
-      <input type="number" class="form-control" id="ir" aria-describedby="emailHelp" >
+      <input type="number" class="form-control" id="ir" >  <!-- Instruction Register is a register which holds the value of the current operation -->
 
-      <h2>Instruction Register(IR)</h2>
-      <input type="number" class="form-control" id="ir" aria-describedby="emailHelp" >
+      <h2>Accumulator</h2>
+      <input type="number" class="form-control" id="accumulator"  > <!-- Accumulator is a register which holds the calculated value of the operation -->
 
     </div>
+
     <div class="col-sm-5 col-lg-5 col-md-5 ">
       <h3 class="text-center">RAM</h3>        
       <table class="table text-center">
@@ -56,9 +59,18 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>Store 6</td>
-          </tr>jump 1</td>
+            <td>Store 4</td>
           </tr>
+          <tr>
+            <td>3</td>
+            <td>jump 1</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td> 1</td>
+          </tr>
+
+          
         </tbody>
       </table>
     </div>
